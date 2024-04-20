@@ -10,8 +10,6 @@ const Header = () => {
 
   return (
     <div className="header">
-      <img src={Logo} alt="" className="logo" />
-
       {menuOpen === false && mobile === true ? (
         <div
           style={{
@@ -23,7 +21,11 @@ const Header = () => {
             setMenuOpen(true);
           }}
         >
-          <img src={Bars} style={{ width: "1.5rem", height: "1.5rem" }} alt=""/>
+          <img
+            src={Bars}
+            style={{ width: "1.5rem", height: "1.5rem" }}
+            alt=""
+          />
         </div>
       ) : (
         <ul className="header-menu">
